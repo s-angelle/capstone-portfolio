@@ -64,8 +64,9 @@ body {
   }
   
   .navbar-brand,
-  #navbar-toggler:active {
-    color: turquoise;
+  #navbar-toggler:active,
+  #navbar-toggler:hover {
+    color: turquoise
   }
   
   #github-icon,
@@ -77,4 +78,17 @@ body {
   #linkedin-link:hover {
     color: turquoise;
   }
-  
+
+  /* NAVBAR SETTNGS FOR SMALLER SCREENS */
+
+@media (320px < width < 992px) {
+   .underline a:hover::before {
+    margin-top: 5%;
+    transform: scaleX(0) !important;
+  }
+
+  #navbar li a:hover {
+    color: turquoise;
+  }
+
+}
