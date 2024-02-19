@@ -1,0 +1,80 @@
+/* MAIN SETTINGS */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  color: rgba(255, 255, 255, 0.719);
+  animation: color 7s infinite linear;
+}
+
+@keyframes color {
+  0%   { background: #242731fc }
+  20%  { background: #242731fc }
+  40%  { background: #0b6d6efc; }
+  60%  { background: #1a4350fc; }
+  80%  { background:#242731fc; }
+  100% { background: #242731fc; }
+}
+
+
+/* NAVBAR*/
+
+#logo {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    box-shadow: 0.1rem 0.8rem 0.8rem 0rem #242731fc;
+  }
+  
+  #navbarSupportedContent,
+  #nav-list {
+    background-color: transparent !important;
+  }
+  
+  .nav-item {
+    padding: 1rem;
+  }
+  
+  #navbar li,
+  #navbar li a {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.779);
+  }
+  
+  #navbar li a::before {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 1%;
+    left: 0;
+    content: "";
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.779);
+  }
+  
+  #navbar .underline a:hover::before {
+    margin-top: 5%;
+    transform: scaleX(1);
+  }
+  
+  .navbar-brand,
+  #navbar-toggler:active {
+    color: turquoise;
+  }
+  
+  #github-icon,
+  #linkedin-icon {
+    font-size: 1.3rem;
+  }
+  
+  #github-link:hover,
+  #linkedin-link:hover {
+    color: turquoise;
+  }
+  
