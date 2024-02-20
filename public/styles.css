@@ -112,7 +112,7 @@ body {
 }
 
 #author-name {
-  font-size: 15vh;
+  font-size: 5rem;
   color: rgba(255, 255, 255, 0.944);
 }
 
@@ -120,15 +120,22 @@ body {
 
   @media (320px < width < 992px){
     #author-name{
-      font-size: 5rem;
+      font-size: 4.5rem;
     }
 
     #intro-heading3{
-      display: block;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
+      margin-left: auto;
+      margin-right: auto;
       font-size: 1.5rem;
     }
+
+/* FOR CERTAIN TABLETS */
+    @media(min-width: 540px){
+      #author-name {
+        font-size: 4rem;
+        white-space: nowrap;
+      }
+    }
   }
+
+  
