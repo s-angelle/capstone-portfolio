@@ -5,9 +5,9 @@
 
 body {
   overflow-x: hidden;
-  overflow-y: scroll;
   color: rgba(255, 255, 255, 0.719);
   animation: color 7s infinite linear;
+  width: 100%;
 }
 
 @keyframes color {
@@ -93,7 +93,7 @@ body {
 
 }
 
-/* HOMEPAGE */
+/* HOMEPAGE SECTION */
 
 #home-main-div {
   display: flex;
@@ -138,4 +138,64 @@ body {
     }
   }
 
-  
+
+  /* ABOUT PAGE SETTINGS */
+
+  #about-main-div {
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    color:black;
+
+  }
+
+  #author-photo {
+    height:20rem;
+    width:20rem;
+    border-radius: 50%;
+    box-shadow: 0.2rem 1rem 1.8rem 0.5rem black;
+  }
+
+  #about-heading {
+    font-size: 4rem;
+    margin-bottom:2%;
+  }
+
+  #about-intro {
+    width: 35%;
+    margin-left: 4em;
+    font-size: 1.2rem;
+    line-height: 2.9rem;
+  }
+
+/* ABOUT SECTION SETTINGS FOR SMALLER SCREENS */
+
+@media (320px < width < 992px){
+ #about-intro {
+  margin-top: 8%;
+  margin-left:auto;
+  margin-right:auto;
+  width: 75%;
+  font-size: 1.5rem;
+ }
+
+ #about-main-div {
+  flex-direction: column;
+  height:25%;
+ }
+
+ #about-heading {
+  text-wrap: nowrap;
+  text-align: center;
+ }
+
+ #author-photo {
+  height:10rem;
+  width:10rem;
+  margin-top:20%;
+ }
+ 
+/* FOR TABLETS + IPADS */
+}
