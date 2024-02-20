@@ -118,9 +118,9 @@ body {
 
   /* HOMEPAGE SETTNGS FOR SMALLER SCREENS */
 
-  @media (320px < width < 992px){
+  @media (279px < width < 992px){
     #author-name{
-      font-size: 4.5rem;
+      font-size: 4.4rem;
     }
 
     #intro-heading3{
@@ -146,9 +146,6 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
-    color:black;
-
   }
 
   #author-photo {
@@ -172,7 +169,7 @@ body {
 
 /* ABOUT SECTION SETTINGS FOR SMALLER SCREENS */
 
-@media (320px < width < 992px){
+@media (280px < width < 766px){
  #about-intro {
   margin-top: 8%;
   margin-left:auto;
@@ -192,10 +189,25 @@ body {
  }
 
  #author-photo {
-  height:10rem;
-  width:10rem;
+  height:15rem;
+  width:15rem;
   margin-top:20%;
  }
- 
+}
+
 /* FOR TABLETS + IPADS */
+
+@media (767px < width < 1025px ){
+
+ #author-photo {
+  height: 20rem;
+  width: 20rem;
+  margin-left: 2%;
+} 
+
+#about-intro{
+  width: 48%;
+  margin-right: 2%;
+}
+
 }
