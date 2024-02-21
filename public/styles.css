@@ -120,7 +120,7 @@ body {
 
   @media (279px < width < 992px){
     #author-name{
-      font-size: 4.4rem;
+      font-size: 3rem;
     }
 
     #intro-heading3{
@@ -170,7 +170,7 @@ body {
 
 /* ABOUT SECTION SETTINGS FOR SMALLER SCREENS */
 
-@media (280px < width < 766px){
+@media (279px < width < 766px){
  #about-intro {
   margin-top: 8%;
   margin-left:auto;
@@ -231,6 +231,8 @@ body {
   text-align: center;
   padding: 2%;
   grid-area: a;
+  font-size: 3rem;
+  margin-top: 2%;
 }
 
 
@@ -286,8 +288,8 @@ grid-area: f;
   justify-self: flex-start;
   }
 
-  
-@media (280px < width < 766px){
+
+@media (278px < width < 766px){
 
   #main-projects-div{
     display:flex;
@@ -304,10 +306,28 @@ grid-area: f;
 
   .project img{
    margin-left: 4%;
-   height:80%;
-   width: 90%;
+   height:85%;
+   width: 95%;
   } 
 } 
 
 /* FOR TABLETS + IPADS */
 
+@media (767px < width < 1025px ){
+  #main-projects-div {
+  height: 100vh;
+  }
+
+
+  .project img{
+    margin-left: 11%;
+    height:90%;
+    width: 80%;
+
+   } 
+
+   #projects-heading {
+    font-size: 3rem;
+    margin-top: 5%;
+  }
+}
