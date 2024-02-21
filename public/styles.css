@@ -1,13 +1,15 @@
+
 /* MAIN SETTINGS */
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  overflow-x: hidden;
+  width: 100%;
   color: rgba(255, 255, 255, 0.719);
   animation: color 7s infinite linear;
-  width: 100%;
+  overflow-x: hidden;
 }
 
 @keyframes color {
@@ -20,7 +22,7 @@ body {
 }
 
 
-/* NAVBAR*/
+/* NAVBAR */
 
 #logo {
     height: 6rem;
@@ -98,10 +100,10 @@ body {
 #home-main-div {
   display: flex;
   flex-direction: column;
+  height: 100vh;
   margin-top: 8%;
   margin-right: 10%; 
   margin-left: 10%; 
-  height: 100vh;
 }
 
 #intro-heading3 {
@@ -118,19 +120,19 @@ body {
 
   /* HOMEPAGE SETTNGS FOR SMALLER SCREENS */
 
-  @media (279px < width < 992px){
-    #author-name{
+  @media (279px < width < 992px) {
+    #author-name {
       font-size: 3rem;
     }
 
-    #intro-heading3{
+    #intro-heading3 {
       margin-left: auto;
       margin-right: auto;
       font-size: 1.5rem;
     }
 
-/* FOR CERTAIN TABLETS */
-    @media(min-width: 540px){
+/* SETTINGS FOR CERTAIN TABLETS */
+    @media(min-width: 540px) {
       #author-name {
         font-size: 4rem;
         white-space: nowrap;
@@ -142,23 +144,23 @@ body {
   /* ABOUT PAGE SETTINGS */
 
   #about-main-div {
-    height: 100vh;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color:gray;
+    height: 100vh;
+    background-color: gray;
   }
 
   #author-photo {
-    height:20rem;
-    width:20rem;
+    height: 20rem;
+    width: 20rem;
     border-radius: 50%;
     box-shadow: 0.2rem 1rem 1.8rem 0.5rem black;
   }
 
   #about-heading {
+    margin-bottom: 2%;
     font-size: 3.5rem;
-    margin-bottom:2%;
   }
 
   #about-intro {
@@ -170,18 +172,18 @@ body {
 
 /* ABOUT SECTION SETTINGS FOR SMALLER SCREENS */
 
-@media (279px < width < 766px){
+@media (279px < width < 766px) {
  #about-intro {
-  margin-top: 8%;
-  margin-left:auto;
-  margin-right:auto;
   width: 75%;
+  margin-top: 8%;
+  margin-right: auto;
+  margin-left: auto;
   font-size: 1.5rem;
  }
 
  #about-main-div {
   flex-direction: column;
-  height:25%;
+  height: 25%;
  }
 
  #about-heading {
@@ -190,15 +192,15 @@ body {
  }
 
  #author-photo {
-  height:15rem;
-  width:15rem;
-  margin-top:20%;
+  height: 15rem;
+  width: 15rem;
+  margin-top: 20%;
  }
 }
 
-/* FOR TABLETS + IPADS */
+/* SETTINGS FOR TABLETS + IPADS */
 
-@media (767px < width < 1025px ){
+@media (767px < width < 1025px ) {
 
  #author-photo {
   height: 20rem;
@@ -206,7 +208,7 @@ body {
   margin-left: 2%;
 } 
 
-#about-intro{
+#about-intro {
   width: 48%;
   margin-right: 2%;
 }
@@ -217,32 +219,31 @@ body {
 /* PROJECTS SECTION */
 
 #main-projects-div {
-  height: 100vh;
-  background-color: darkslateblue;
-  display:grid;
-  gap: 2px;
+  display: grid;
   grid-template-areas:
-          "a a a a a "
-          ". b c d ."
-          ". e f g ."       
+  "a a a a a "
+  ". b c d ."
+  ". e f g .";    
+  gap: 2px;
+  height: 100vh;
+  background-color: darkslateblue;   
 }
 
 #projects-heading {
-  text-align: center;
-  padding: 2%;
   grid-area: a;
-  font-size: 3rem;
   margin-top: 2%;
+  padding: 2%;
+  font-size: 3rem;
+  text-align: center;
 }
 
 
 .project,
 .project img {
-  border-radius: 10%;
+  justify-self: center;
   height: 14rem;
   width: 15rem;
-  justify-self: center;
-
+  border-radius: 10%;
 }
 
 .project img {
@@ -267,7 +268,7 @@ body {
 
 }
 
-#project-3{
+#project-3 {
   grid-area: d;
 
 }
@@ -279,7 +280,7 @@ body {
 }
 
 #project-5 {
-grid-area: f;
+  grid-area: f;
 
 }
 
@@ -288,46 +289,47 @@ grid-area: f;
   justify-self: flex-start;
   }
 
+  /* PROJECT SECTION SETTINGS FOR SMALLER SCREENS */
 
-@media (278px < width < 766px){
 
-  #main-projects-div{
-    display:flex;
+@media (278px < width < 766px) {
+
+  #main-projects-div {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1%;
     height: 100%;
+    padding: 1%;
   }
 
   #projects-heading {
-    font-size: 2.5rem;
     padding: 10%;
+    font-size: 2.5rem;
   }
 
   .project img{
-   margin-left: 4%;
-   height:85%;
-   width: 95%;
+    height: 85%;
+    width: 95%;
+    margin-left: 4%;
   } 
 } 
 
-/* FOR TABLETS + IPADS */
+/* SETTINGS FOR TABLETS + IPADS */
 
-@media (767px < width < 1025px ){
+@media (767px < width < 1025px ) {
   #main-projects-div {
-  height: 100vh;
+    height: 100vh;
   }
 
 
-  .project img{
-    margin-left: 11%;
-    height:90%;
+  .project img {
+    height: 90%;
     width: 80%;
-
+    margin-left: 11%;
    } 
 
    #projects-heading {
-    font-size: 3rem;
     margin-top: 5%;
+    font-size: 3rem;
   }
 }
