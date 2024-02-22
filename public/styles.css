@@ -430,17 +430,17 @@ body {
     font-size: 2rem;
   }
 
-   #contact-page-button {
+  #contact-page-button {
     /* slightly darker color for mobile phones */
     border: solid rgb(54, 193, 179);
   }
 
   #contact-link {
-      /* code added again here because it does not display on iPhones */
-        text-decoration: none;
-      /* slightly darker color for mobile phones */
-        color: rgba(255, 255, 255, 0.92);
-      }
+    /* code added again here because it does not display on iPhones */
+    text-decoration: none;
+    /* slightly darker color for mobile phones */
+    color: rgba(255, 255, 255, 0.92);
+  }
 
 
   }
