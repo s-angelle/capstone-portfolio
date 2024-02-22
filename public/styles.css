@@ -429,7 +429,13 @@ body {
     margin-top: 10%;
     font-size: 2rem;
   }
-}
+
+  #contact-link {
+      /* code added again here because it does not display on iPhones */
+        text-decoration: none;
+        color: white;
+      }
+  }
 
 /* FOOTER SETTINGS */
 
