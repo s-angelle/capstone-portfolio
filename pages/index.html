@@ -21,195 +21,199 @@
     <link rel="stylesheet" href="../public/styles.css" />
   </head>
   <body>
-    <!-- NAV BAR -->
-    <nav class="navbar navbar-dark custom navbar-expand-lg p-3" id="navbar">
-      <div class="container-fluid d-flex justify-content-end">
-        <a href="/" class="navbar-brand col">
-          <img id="logo" src="../images/Logo1.png" alt="Logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          id="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+    <div class="scroll-container">
+      <!-- NAV BAR -->
+      <nav class="navbar navbar-dark custom navbar-expand-lg p-3" id="navbar">
+        <div class="container-fluid d-flex justify-content-end">
+          <a href="" class="navbar-brand col">
+            <img id="logo" src="../images/Logo1.png" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            id="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon" id="navbar-toggler"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-0 mb-lg-0">
+              <li class="nav-item mt-1 underline">
+                <a class="nav-link" href="#page-2" rel="noreferrer"> About </a>
+              </li>
+              <li class="nav-item mt-1 underline">
+                <a class="nav-link" href="#page-3" rel="noreferrer">
+                  Projects
+                </a>
+              </li>
+              <li class="nav-item mt-1 underline">
+                <a
+                  class="nav-link"
+                  href="https://drive.google.com/file/d/1pqaTYvxm3yiNIahG2QIT2-CRlLjdLaye/view?usp=sharing"
+                  rel="noreferrer"
+                >
+                  Resume
+                </a>
+              </li>
+              <li class="nav-item mt-1 underline">
+                <a class="nav-link" href="#page-4"> Contact </a>
+              </li>
+              <li class="nav-item mt-1">
+                <a
+                  id="github-link"
+                  class="nav-link"
+                  href="https://github.com/s-angelle"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i class="bi bi-github"></i>
+                </a>
+              </li>
+              <li class="nav-item mt-1">
+                <a
+                  id="linkedin-link"
+                  class="nav-link"
+                  href="https://www.linkedin.com/in/sabrina-angelle"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- HOMEPAGE -->
+      <div class="home-main-div scroll-page" id="page-1">
+        <h5 class="animate__animated animate__rollIn">Hi, my name is</h5>
+        <h1
+          class="animate__animated animate__fadeInDown animate__delay-1s"
+          id="author-name"
         >
-          <span class="navbar-toggler-icon" id="navbar-toggler"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-0 mb-lg-0">
-            <li class="nav-item mt-1 underline">
-              <a class="nav-link" href="" rel="noreferrer"> About </a>
-            </li>
-            <li class="nav-item mt-1 underline">
-              <a class="nav-link" href="" rel="noreferrer"> Projects </a>
-            </li>
-            <li class="nav-item mt-1 underline">
-              <a
-                class="nav-link"
-                href="https://drive.google.com/file/d/1pqaTYvxm3yiNIahG2QIT2-CRlLjdLaye/view?usp=sharing"
-                rel="noreferrer"
-              >
-                Resume
-              </a>
-            </li>
-            <li class="nav-item mt-1 underline">
-              <a class="nav-link" href=""> Contact </a>
-            </li>
-            <li class="nav-item mt-1">
-              <a
-                id="github-link"
-                class="nav-link"
-                href="https://github.com/s-angelle"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i class="bi bi-github"></i>
-              </a>
-            </li>
-            <li class="nav-item mt-1">
-              <a
-                id="linkedin-link"
-                class="nav-link"
-                href="https://www.linkedin.com/in/sabrina-angelle"
-                target="_blank"
-                rel="noreferrer"
-                ><i class="bi bi-linkedin"></i>
-              </a>
-            </li>
-          </ul>
+          Sabrina Angelle
+        </h1>
+        <h3
+          class="animate__animated animate__backInUp animate__delay-2s"
+          id="intro-heading3"
+        >
+          I'm a web developer who thoroughly enjoys creating a visually
+          stimulating, user-friendly experience. I'm currently seeking a
+          collaborative environment to further enhance my coding skills.
+        </h3>
+      </div>
+
+      <!-- ABOUT ME SECTION -->
+      <div class="about-main-div scroll-page" id="page-2">
+        <img id="author-photo" src=../images/author-photo.jpg />
+        <div id="about-intro">
+          <h3 id="about-heading">About Me</h3>
+          <p>
+            I enjoy solving complex problems and simultaneously being creative.
+            I'm able to utilize my background in law enforcement and teaching
+            abroad to offer a fresh, global perspective on troubleshooting and
+            problem solving in a collaborative environment.
+          </p>
         </div>
       </div>
-    </nav>
 
-    <!-- HOMEPAGE -->
-    <div id="home-main-div">
-      <h5 class="animate__animated animate__rollIn">Hi, my name is</h5>
-      <h1
-        class="animate__animated animate__fadeInDown animate__delay-1s"
-        id="author-name"
-      >
-        Sabrina Angelle
-      </h1>
-      <h3
-        class="animate__animated animate__backInUp animate__delay-2s"
-        id="intro-heading3"
-      >
-        I'm a web developer who thoroughly enjoys creating a visually
-        stimulating, user-friendly experience. I'm currently seeking a
-        collaborative environment to further enhance my coding skills.
-      </h3>
-    </div>
-
-    <!-- ABOUT ME SECTION -->
-    <div id="about-main-div">
-      <img id="author-photo" src=../images/author-photo.jpg />
-      <div id="about-intro">
-        <h3 id="about-heading">About Me</h3>
-        <p>
-          I enjoy solving complex problems and simultaneously being creative.
-          I'm able to utilize my background in law enforcement and teaching
-          abroad to offer a fresh, global perspective on troubleshooting and
-          problem solving in a collaborative environment.
-        </p>
-      </div>
-    </div>
-
-    <!-- PROJECTS SECITON -->
-    <div id="main-projects-div">
-      <h2 id="projects-heading">Check Out Some of My Projects</h2>
-      <div class="project" id="project-1">
-        <a
-          href="https://github.com/s-angelle/s-angelle.github.io"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            class="img-zoom"
-            src="../images/humble-beginnings-website.png"
-            alt="project-example"
-          />
-        </a>
-      </div>
-      <div class="project" id="project-2">
-        <a
-          href="https://github.com/s-angelle/the-balance-of-fate-game"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            class="img-zoom"
-            src="../images/balance-of-fate-game.png"
-            alt="project-example"
-          />
-        </a>
-      </div>
-      <div class="project" id="project-3">
-        <a
-          href="https://github.com/s-angelle/omdb-movie-app"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            class="img-zoom"
-            src="../images/omdb-app.png"
-            alt="project-example"
-          />
-        </a>
-      </div>
-      <div class="project bottom" id="project-4">
-        <a
-          href="https://github.com/s-angelle/the-dog-brary-app"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            class="img-zoom"
-            src="../images/dog-brary-app.png"
-            alt="project-example"
-          />
-        </a>
-      </div>
-      <div class="project bottom" id="project-5">
-        <a
-          href="https://github.com/s-angelle/the-wander-shop-frontend-v2"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            class="img-zoom"
-            src="../images/wander-shop-fullstack.png"
-            alt="project-example"
-          />
-        </a>
-      </div>
-      <div class="project bottom" id="project-6">
-        <a
-          href="https://github.com/s-angelle/the-wander-shop-frontend-v2"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            class="img-zoom"
-            src="../images/wander-shop-fullstack.png"
-            alt="project-example"
-          />
-        </a>
-      </div>
-    </div>
-
-    <!-- CONTACT PAGE -->
-
-    <div id="main-contact-div">
-      <h2 id="contact-heading">Want to Connect?</h2>
-      <div id="contact-card">
-        <div id="contact-card-img-div">
-          <img id="contact-card-img" src="../images/handshake.gif" />
+      <!-- PROJECTS SECITON -->
+      <div class="main-projects-div" id="page-3">
+        <h2 id="projects-heading">Check Out Some of My Projects</h2>
+        <div class="project" id="project-1">
+          <a
+            href="https://github.com/s-angelle/s-angelle.github.io"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              class="img-zoom"
+              src="../images/humble-beginnings-website.png"
+              alt="project-example"
+            />
+          </a>
         </div>
-        <button id="contact-page-button">Say Hi</button>
+        <div class="project" id="project-2">
+          <a
+            href="https://github.com/s-angelle/the-balance-of-fate-game"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              class="img-zoom"
+              src="../images/balance-of-fate-game.png"
+              alt="project-example"
+            />
+          </a>
+        </div>
+        <div class="project" id="project-3">
+          <a
+            href="https://github.com/s-angelle/omdb-movie-app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              class="img-zoom"
+              src="../images/omdb-app.png"
+              alt="project-example"
+            />
+          </a>
+        </div>
+        <div class="project bottom" id="project-4">
+          <a
+            href="https://github.com/s-angelle/the-dog-brary-app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              class="img-zoom"
+              src="../images/dog-brary-app.png"
+              alt="project-example"
+            />
+          </a>
+        </div>
+        <div class="project bottom" id="project-5">
+          <a
+            href="https://github.com/s-angelle/the-wander-shop-frontend-v2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              class="img-zoom"
+              src="../images/wander-shop-fullstack.png"
+              alt="project-example"
+            />
+          </a>
+        </div>
+        <div class="project bottom" id="project-6">
+          <a
+            href="https://github.com/s-angelle/the-wander-shop-frontend-v2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              class="img-zoom"
+              src="../images/wander-shop-fullstack.png"
+              alt="project-example"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- CONTACT PAGE -->
+
+      <div class="main-contact-div" id="page-4">
+        <h2 id="contact-heading">Want to Connect?</h2>
+        <div id="contact-card">
+          <div id="contact-card-img-div">
+            <img id="contact-card-img" src="../images/handshake.gif" />
+          </div>
+          <button id="contact-page-button">Say Hi</button>
+        </div>
       </div>
     </div>
 
@@ -221,10 +225,14 @@
           <a href="#" class="nav-link px-2 text-light">Home</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-light">About</a>
+          <a href="#page-3" class="nav-link px-2 text-light">Projects</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-light">Resume</a>
+          <a
+            href="https://drive.google.com/file/d/1pqaTYvxm3yiNIahG2QIT2-CRlLjdLaye/view?usp=sharing"
+            class="nav-link px-2 text-light"
+            >Resume</a
+          >
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link px-2 text-light">
