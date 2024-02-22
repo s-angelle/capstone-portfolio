@@ -8,7 +8,7 @@
 body {
   width: 100%;
   color: rgba(255, 255, 255, 0.719);
-  animation: color 7s infinite linear;
+  animation: color 5s infinite linear;
   overflow-x: hidden;
 }
 
@@ -70,12 +70,7 @@ body {
   #navbar-toggler:hover {
     color: turquoise
   }
-  
-  #github-icon,
-  #linkedin-icon {
-    font-size: 1.3rem;
-  }
-  
+
   #github-link:hover,
   #linkedin-link:hover {
     color: turquoise;
@@ -132,6 +127,7 @@ body {
     }
 
 /* SETTINGS FOR CERTAIN TABLETS */
+
     @media(min-width: 540px) {
       #home-main-div {
         height: 80vh;
@@ -146,7 +142,7 @@ body {
   }
 
 
-  /* ABOUT PAGE SETTINGS */
+  /* ABOUT SECTION SETTINGS */
 
   #about-main-div {
     display: flex;
@@ -179,49 +175,49 @@ body {
 
 @media (279px < width < 766px) {
 
- #about-intro {
-  width: 75%;
-  margin-top: 8%;
-  margin-right: auto;
-  margin-left: auto;
-  font-size: 18px;
- }
+  #about-intro {
+    width: 75%;
+    margin-top: 8%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 18px;
+   }
+  
+   #about-main-div {
+    flex-direction: column;
+    height: 100%;
+   }
+  
+   #about-heading {
+    text-wrap: nowrap;
+    text-align: center;
+    font-size: 2.4rem;
+   }
+  
+   #author-photo {
+    height: 15rem;
+    width: 15rem;
+    margin-top: 10%;
+   }
 
- #about-main-div {
-  flex-direction: column;
-  height: 100vh;
- }
-
- #about-heading {
-  text-wrap: nowrap;
-  text-align: center;
-  font-size: 2.4rem;
- }
-
- #author-photo {
-  height: 15rem;
-  width: 15rem;
-  margin-bottom: 5%;
- }
 }
 
 /* SETTINGS FOR TABLETS + IPADS */
 
-@media (767px < width < 1025px ) {
+@media (767px < width < 1200px ) {
 
- #author-photo {
+#author-photo {
   height: 17rem;
   width: 17rem;
   margin-left: 2%;
 } 
 
 #about-intro {
-  width: 48%;
+  width: 55%;
   margin-right: 2%;
   font-size: 18px;
 }
 }
-
 
 /* PROJECTS SECTION */
 
@@ -233,7 +229,7 @@ body {
   ". e f g .";    
   gap: 2px;
   height: 100vh;
-  background-color: darkslateblue;   
+  background-color: darkslateblue;
 }
 
 #projects-heading {
@@ -296,7 +292,11 @@ body {
   justify-self: flex-start;
   }
 
-  /* PROJECT SECTION SETTINGS FOR SMALLER SCREENS */
+.project.bottom {
+  margin-bottom: 8%;
+  }
+
+/* PROJECTS SECTION SETTINGS FOR SMALLER SCREENS */
 
 
 @media (278px < width < 766px) {
@@ -332,27 +332,27 @@ body {
     height: 100vh;
   }
 
-
-  .project img {
-    height: 90%;
-    width: 80%;
-    margin-left: 11%;
-   } 
-
    #projects-heading {
     margin-top: 9%;
     font-size: 2.5rem;
   }
+
+  .project img {
+    height: 85%;
+    width: 95%;
+    margin-left: 3%;
+   } 
 }
 
 
-/* CONTACT PAGE SETTINGS */
+/* CONTACT SECTION SETTINGS */
 
 #main-contact-div {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 100vh;
+  height: 95vh;
+  margin-top: 3%;
 }
 
 #contact-heading {
@@ -361,7 +361,7 @@ body {
 }
 
 #contact-card {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   height: 400px;
@@ -374,7 +374,7 @@ body {
 
 
 #contact-card-img-div {
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
@@ -403,7 +403,7 @@ body {
   font-weight: bold;
 }
 
-/* CONTACT PAGE SETTINGS FOR SMALLER SCREENS */
+/* CONTACT SECTION SETTINGS FOR SMALLER SCREENS */
 
 @media (279px < width < 766px) {
   
@@ -416,4 +416,14 @@ body {
     margin-top: 10%;
     font-size: 2rem;
   }
+}
+
+/* FOOTER SETTINGS */
+
+.text-light {
+  color: rgba(255, 255, 255, 0.719) !important;
+}
+
+#footer li a:hover {
+  color: turquoise !important;
 }
