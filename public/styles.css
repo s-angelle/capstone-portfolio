@@ -393,11 +393,6 @@ body {
   border-radius: 50%;
 }
 
-#contact-link {
-  text-decoration: none;
-  color: white;
-}
-
 #contact-page-button {
   align-self: center;
   height: 2.5rem;
@@ -414,6 +409,11 @@ body {
   background-color: turquoise;
   color: white;
   font-weight: bold;
+}
+
+#contact-link {
+  text-decoration: none;
+  color: white;
 }
 
 /* CONTACT SECTION SETTINGS FOR SMALLER SCREENS */
