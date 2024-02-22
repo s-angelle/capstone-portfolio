@@ -2,7 +2,7 @@
 
 This is a capstone project for "The 2024 Complete Web Development Camp" instructed by Angela Yu.
 
-- Link to access project: https://sabrinaangelle.github.io/pages/
+- Link to access project: https://s-angelle.github.io/pages/
 
 ## Project Goals
 
