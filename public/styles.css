@@ -442,8 +442,23 @@ body {
     color: rgba(255, 255, 255, 0.92);
   }
 
+}
 
+  /* SETTINGS FOR TABLETS + IPADS */
+
+@media (767px < width < 1025px ) {
+
+  #contact-page-button {
+    /* slightly darker color for mobile phones */
+    border: solid rgb(54, 193, 179);
   }
+
+  #contact-link {
+    /* slightly darker color for mobile phones */
+    color: rgba(255, 255, 255, 0.92);
+  }
+
+}
 
 /* FOOTER SETTINGS */
 
