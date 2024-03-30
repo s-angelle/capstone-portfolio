@@ -88,6 +88,7 @@ body {
   /* NAVBAR SETTNGS FOR SMALLER SCREENS */
 
 @media (320px < width < 992px) {
+
    .underline a:hover::before {
     margin-top: 5%;
     transform: scaleX(0) !important;
@@ -96,6 +97,11 @@ body {
   #navbar li a:hover {
     color: turquoise;
   }
+
+  .hidden {
+    display:none;
+  }
+
 
 }
 
