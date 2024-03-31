@@ -84,11 +84,6 @@ body {
     color: turquoise;
   }
 
-  .navbar-toggler:active {
-    outline: none;
-  }
-  
-
   #github-link:hover,
   #linkedin-link:hover {
     color: turquoise;
