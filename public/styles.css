@@ -137,6 +137,8 @@ body {
   @media (279px < width < 992px) {
     #author-name {
       font-size: 3rem;
+      margin-top: 4%;
+      margin-bottom: 4%;
     }
 
     #intro-heading3 {
@@ -210,12 +212,12 @@ body {
    #about-heading {
     text-wrap: nowrap;
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 2rem;
    }
   
    #author-photo {
-    height: 15rem;
-    width: 15rem;
+    height: 13rem;
+    width: 13rem;
     margin-top: 10%;
    }
 
@@ -433,6 +435,7 @@ body {
   .main-contact-div {
     flex-direction: column;
     justify-content: flex-start;
+    height: 71vh;
   }
 
   #contact-heading {
