@@ -405,7 +405,8 @@ body {
   border-radius: 50%;
 }
 
-#contact-page-button {
+#contact-page-button,
+.no-hover {
   align-self: center;
   height: 2.5rem;
   width: 7rem;
