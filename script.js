@@ -15,11 +15,3 @@ $('#navbar-toggler').on('click', function(){
 $("#contact-link").on('click', function() { 
     $(this).dblclick(); 
   });
-
-
-
-// Add click event that ensures contact button no longer displays hover effect after being clicked.
-
-  $('contact-page-button').on('click', function(){
-       (this).addClass('no-hover');
-  })

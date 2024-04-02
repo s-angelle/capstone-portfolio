@@ -10,4 +10,4 @@ The purpose of this site is to incorporate everything reviewed / learned about t
 
 ### Stretch Goal
 
-1. Implement JavaScript to improve the user's experience, particularly with the hamburger menu that appears for smaller screen resolutions.
+1. Implement JavaScript to improve the user's experience, particularly with the hamburger menu that appears for smaller screen resolutions. (ACHIEVED)
